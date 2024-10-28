@@ -1,0 +1,364 @@
+/* Basic Styles for the Application */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between brand and nav items */
+    align-items: center; /* Center vertically */
+    padding: 15px 25px; /* Padding for the navbar */
+    background: linear-gradient(135deg, #1e3a5f, #3d5a80); /* Rich blue gradient */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Brand Logo */
+.navbar-brand {
+    font-size: 1.8rem; /* Larger font for brand name */
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+/* Navigation Links */
+.navbar-nav {
+    display: flex;
+    flex-direction: row; /* Horizontal alignment */
+    list-style-type: none; /* Remove bullets */
+    padding-left: 0; /* Remove padding */
+}
+
+.nav-item {
+    margin: 0 15px; /* Add horizontal spacing */
+}
+
+.nav-link {
+    color: #ffffff; /* White text color for links */
+    text-decoration: none; /* No underline */
+    font-size: 1rem; /* Font size for links */
+    padding: 8px 15px; /* Padding around links */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover Effects */
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light white overlay on hover */
+    color: #ffffff; /* Ensure text remains white */
+}
+
+/* Active Link Styling */
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly darker overlay for active links */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Styles for Logout Button */
+.nav-link.btn-link {
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove underline */
+    background: rgb(0, 0, 0); /* Set background color */
+}
+
+.nav-link.btn-link:hover {
+    background-color: darkred; /* Darker shade on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://source.unsplash.com/1600x900/?english'); /* Hero image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background: linear-gradient(to right, #007bff, #0056b3);
+    padding: 50px 20px; /* Responsive padding */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Courses Section */
+.courses {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.courses h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+}
+
+.course-card {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 300px; /* Allow cards to grow and shrink */
+    position: relative; /* For image overlay */
+    max-width: 350px; /* Set max width for better aesthetics */
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.course-card img {
+    width: 100%; /* Make image responsive */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Cover image without stretching */
+}
+
+.card-body {
+    padding: 20px;
+    text-align: left; /* Align text to left for readability */
+}
+
+.card-title {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    color: #4a90e2; /* Use a color for the title */
+    font-weight: bold; /* Make the title bold */
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666; /* A softer color for the description */
+    margin-bottom: 15px; /* Space below the description */
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2c3e50;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #f4f4f4;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #130e33; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #da001d; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.btn-warning {
+    background-color: #ffcc00; /* Button color */
+    color: #333; /* Button text color */
+    border: none; /* Remove border */
+    padding: 12px 30px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2rem; /* Button font size */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effects */
+    z-index: 2; /* Ensure button is above overlay */
+}
+
+.btn-warning:hover {
+    background-color: #ff0040; /* Lighter shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Lesson Booking Section */
+.lesson-booking {
+    background-color: #e9f7fa; /* Light blue background */
+    padding: 60px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.lesson-booking h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.lesson-times button {
+    font-size: 1.2rem;
+    margin: 10px 5px; /* Better spacing for buttons */
+}
+
+/* Feedback Section */
+.feedback {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+}
+
+.feedback h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.feedback-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0; /* Padding for feedback items */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer h3 {
+    margin-bottom: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px; /* Minimum width for footer sections */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Smaller font size for mobile */
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Smaller font size for mobile */
+    }
+
+    .courses h2 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    .course-card {
+        flex: 1 1 100%; /* Full width on small screens */
+        max-width: none; /* Remove max width on small screens */
+    }
+
+    .lesson-booking h2 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack nav items */
+        width: 100%; /* Full width for mobile */
+    }
+
+    .nav-item {
+        margin: 5px 0; /* Vertical spacing for nav items */
+    }
+
+    .nav-link.btn-link {
+        font-size: 1rem; /* Adjust font size for mobile */
+        margin-left: 10px; /* Add some left margin */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stack footer sections */
+        align-items: center; /* Center align footer items */
+    }
+}
