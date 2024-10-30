@@ -27,7 +27,7 @@ STRIPE_SECRET_KEY = 'your_stripe_secret_key_here'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['nicknew-4.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 
